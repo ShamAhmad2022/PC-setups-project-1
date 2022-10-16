@@ -1,0 +1,101 @@
+.main-footer{
+    background-color: rgb(169, 119, 35);
+    height: 10vh;
+
+    &-footer-nav2{
+        height: inherit;
+        background-color:transparent;
+        margin: 0 auto;
+        width: 75%;
+        padding:3rem 0;
+    }
+}
+
+$grid-width: 114rem;
+$gutter-verticle: 8rem;
+$gutter-horizontal: 6rem; //sapces between the columns
+
+.row-footer{
+    max-width: $grid-width;
+    background-color: transparent;
+    margin: 0 auto;    
+    font-size: 1.5rem;
+
+    @include clearfix;
+
+    [class^="c-"]{
+        background-color: transparent;
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .c-1of2{
+        width: calc((100% - #{$gutter-horizontal})/2);
+        display: inline-block;
+
+        &-ul{
+            display: inline-block;
+            transform: translatex(20rem);
+            
+            &-li{
+                list-style-type: none;
+                display: inline-block;
+                margin-left: -4.8rem;
+    
+    
+                &-a{
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: all .5s;
+            
+                    &:link, &:visited{
+                        color: inherit;
+                    }
+            
+                    &:active, &:hover{
+                        color: $color-primary-orange;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+// .div{
+//     width: calc((100% - #{$gutter-horizontal})/2);
+//     display: inline-block;
+
+//     &-ul{
+//         display: inline-block;
+//         margin-left: 12rem;
+//         transform: translatex(35rem);
+//         font-size: 1.8rem;
+        
+//         &-li{
+//             list-style-type: none;
+//             display: inline-block;
+//              padding: 0 1rem;
+
+
+//             &-a{
+//                 display: inline-block;
+//                 text-decoration: none;
+//                 transition: all .5s;
+        
+//                 &:link, &:visited{
+//                     color: inherit;
+//                 }
+        
+//                 &:active, &:hover{
+//                     color: $color-primary-orange;
+//                 }
+//             }
+//         }
+//     }
+// }

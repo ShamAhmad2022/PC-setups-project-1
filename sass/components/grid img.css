@@ -1,0 +1,46 @@
+.auto-grid-container {
+  background: transparent;
+  padding: 0 18rem;
+}
+
+.auto-grid {
+  --auto-grid-min-size: 35rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 5rem;
+}
+
+.grid {
+  width: 35rem;
+  height: 30rem;
+  margin-right: -50px;
+  text-align: center;
+  background: #eb4d4b;
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-1 {
+  background-image: url(../images/img7.jpg);
+}
+
+.grid-2 {
+  background-image: url(../images/img8.jpg);
+}
+
+.grid-3 {
+  background-image: url(../images/img9.jpg);
+}
+
+.grid-4 {
+  background-image: url(../images/img10.jpg);
+}
+
+.grid-5 {
+  background-image: url(../images/img11.jpg);
+}
+
+.grid-6 {
+  background-image: url(../images/img12.jpg);
+}

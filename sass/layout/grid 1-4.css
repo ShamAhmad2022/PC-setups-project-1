@@ -1,0 +1,38 @@
+.row4 {
+  max-width: 100%;
+  background-color: rgb(135, 26, 68);
+  margin: 0 auto;
+}
+.row4:not(:last-child) {
+  margin-bottom: 10rem;
+}
+.row4::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row4 [class^=c-] {
+  background-color: rgb(186, 89, 99);
+  float: left;
+}
+.row4 [class^=c-]:not(:last-child) {
+  margin-right: 1rem;
+}
+.row4 .c-1of2 {
+  width: calc((100% - 1rem) / 2);
+}
+.row4 .c-1of3 {
+  width: calc((100% - 2*1rem) / 3);
+}
+.row4 .c-2of3 {
+  width: calc(2* ((100% - 2*1rem)/3) + 1rem);
+}
+.row4 .c-1of4 {
+  width: calc((100% - 3*1rem) / 4);
+}
+.row4 .c-2of4 {
+  width: calc(2* ((100% - 3*1rem)/4) + 1rem);
+}
+.row4 .c-3of4 {
+  width: calc(3* ((100% - 3*1rem)/4) + 2*1rem);
+}

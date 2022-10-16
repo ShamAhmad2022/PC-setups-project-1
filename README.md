@@ -1,0 +1,1 @@
+A personal project using HTML and SASS. because it's personal i used a filler text(Lorem Ipsum) instead of real words but i made sure to choose a suitable layout and colors.

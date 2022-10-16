@@ -1,0 +1,21 @@
+.row3 {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row3:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row3::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row3 [class^=c-] {
+  float: left;
+}
+.row3 [class^=c-]:not(:last-child) {
+  margin-right: 4rem;
+}
+.row3 .c-1of3 {
+  width: calc((100% - 2*4rem) / 3);
+}

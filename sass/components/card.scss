@@ -1,0 +1,73 @@
+.card{
+    position: relative;
+    height: 58rem;
+
+    &-side{
+        height: 58rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.588);
+
+    }
+
+    //front
+    &-pic{
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: multiply;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: #a24f065a;
+
+        &-1{
+
+            background-image: url(../images/header.jpg);
+        }
+
+        &-2{
+            background-image: url(../images/header22.jpg);
+        }
+
+        &-3{
+            background-image: url(../images/header2222222.jpg);
+        }
+    }
+
+
+    &-heading{
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgb(55, 30, 30);
+        margin-top: 3rem;
+    }
+
+ 
+    &-details{
+        margin-top: 2rem;
+    }
+
+    &-button{
+            display: inline-block;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border: 2px solid rgb(74, 74, 74);
+            border-radius: 50px;
+            margin-top: 4rem;
+            
+            &:link, &:visited{
+                color: white;
+                background-color: $color-primary-orange;
+            }
+
+            &:active, &:hover{
+                border: none;
+                background-color:  #c1844e;
+            }
+    }
+}

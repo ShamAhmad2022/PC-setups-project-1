@@ -1,0 +1,36 @@
+$grid-width-1-3: 114rem;
+$gutter-verticle-1-3: 8rem;
+$gutter-horizontal-1-3: 4rem; //sapces between the columns
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.row3{
+    max-width: $grid-width-1-3;
+    margin: 0 auto;    
+    
+    &:not(:last-child){
+    margin-bottom: $gutter-verticle-1-3;
+    }
+
+    @include clearfix;
+
+    [class^="c-"]{
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $gutter-horizontal-1-3;
+        }
+    }
+
+
+    .c-1of3{
+        width: calc((100% - 2*#{$gutter-horizontal-1-3})/3);
+    }
+
+}

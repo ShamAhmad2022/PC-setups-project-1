@@ -1,0 +1,37 @@
+.main-header {
+  height: 110vh;
+  background-image: url(../images/header2222.jpg);
+  background-color: rgba(0, 0, 0, 0.605);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  color: rgb(222, 222, 222);
+  text-align: center;
+}
+.main-header-container {
+  width: 50%;
+  transform: translate(50%, 50%);
+}
+.main-header-container-header {
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+}
+.main-header-container-par {
+  font-size: 3rem;
+}
+.main-header-container-link {
+  display: inline-block;
+  margin-top: 5rem;
+  text-decoration: none;
+  padding: 2rem 4.5rem;
+  border: 2px solid rgb(74, 74, 74);
+  border-radius: 50px;
+}
+.main-header-container-link:link, .main-header-container-link:visited {
+  color: inherit;
+  background-color: rgba(174, 32, 72, 0.774);
+}
+.main-header-container-link:active, .main-header-container-link:hover {
+  border: none;
+  background-color: rgba(208, 71, 110, 0.774);
+}

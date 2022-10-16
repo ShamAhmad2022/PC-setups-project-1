@@ -1,0 +1,11 @@
+.main-footer {
+  background-color: maroon;
+  height: 10vh;
+}
+.main-footer-footer-nav2 {
+  height: inherit;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 75%;
+  padding: 2rem 0;
+}

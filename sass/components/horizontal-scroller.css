@@ -1,0 +1,14 @@
+.horizontal-scroller {
+  max-height: 13rem;
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 5rem;
+}
+.horizontal-scroller-item {
+  margin: 0 8rem;
+  min-width: 15rem;
+  height: 11rem;
+  line-height: 11rem;
+  text-align: center;
+  background-color: rgb(207, 207, 207);
+}

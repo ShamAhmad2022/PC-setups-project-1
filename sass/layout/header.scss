@@ -1,0 +1,48 @@
+.main-header{   
+    height: 95vh;
+    background-image: url(../images/header2222.jpg);
+    background-color: rgba(33, 18, 2, 0.79);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    color: rgb(222, 222, 222);
+    text-align: center;
+    margin-bottom: $margin-bottom-between-sections;
+
+    &-container{
+        width: 50%;
+        transform: translate(50%,50%);
+
+        &-header{
+            color: $color-primary-green;
+            font-size: 4.8rem;
+            margin-bottom: 1.5rem;
+            text-shadow: rgb(0, 0, 0) 2rem 2rem 2rem;
+        }
+
+        &-par{
+            font-size: 3rem;
+        }
+
+        &-link{
+            display: inline-block;
+            margin-top: 5rem;
+            text-decoration: none;
+            padding: 2rem 4.5rem;
+            border: 2px solid rgb(74, 74, 74);
+            border-radius: 50px;
+            
+            &:link, &:visited{
+                color: inherit;
+                // background-image: linear-gradient(to right bottom, rgb(53, 16, 112),rgb(128, 0, 128),rgb(155, 86, 155));
+                background-color: $color-primary-orange;
+            }
+
+            &:active, &:hover{
+                border: none;
+                background-color:  #c1844e;
+            }
+        }
+    }
+
+}

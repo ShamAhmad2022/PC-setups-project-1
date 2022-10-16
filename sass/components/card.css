@@ -1,0 +1,45 @@
+.card {
+  position: relative;
+  height: 58rem;
+}
+.card-side {
+  height: 58rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.588);
+}
+.card-pic {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: multiply;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgba(162, 79, 6, 0.3529411765);
+}
+.card-pic-1 {
+  background-image: url(../images/header.jpg);
+}
+.card-pic-2 {
+  background-image: url(../images/header22.jpg);
+}
+.card-pic-3 {
+  background-image: url(../images/header2222222.jpg);
+}
+.card-heading {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: rgb(55, 30, 30);
+  margin-top: 3rem;
+}
+.card-details {
+  margin-top: 2rem;
+}
+.card-button {
+  color: white;
+}
