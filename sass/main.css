@@ -372,18 +372,39 @@ body {
 }
 
 .horizontal-scroller {
-  max-height: 13rem;
-  display: flex;
-  overflow-x: auto;
+  width: 100%;
+  max-height: 90rem;
+  overflow-x: hidden;
   margin-bottom: 5rem;
+  background-color: rgba(30, 89, 148, 0);
+}
+.horizontal-scroller-animation {
+  display: flex;
+  position: relative;
+  top: 0;
+  right: 0;
+  animation: slideh linear 10s infinite;
+}
+.horizontal-scroller-animation:hover {
+  animation-play-state: paused;
+}
+@keyframes slideh {
+  0% {
+    right: 0%;
+  }
+  33% {
+    right: 50%;
+  }
+  66% {
+    right: 100%;
+  }
 }
 .horizontal-scroller-item {
+  width: 100%;
   margin: 0 8rem;
-  min-width: 15rem;
-  height: 11rem;
-  line-height: 11rem;
-  text-align: center;
-  background-color: rgb(207, 207, 207);
+}
+.horizontal-scroller-item img {
+  height: 75%;
 }
 
 .card {
